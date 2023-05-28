@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carole Ngondi Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c26e16d369.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" class="logo">
+            <ul>
+            <li><a href="#">Home</a></li> 
+            <li><a href="#">About</a></li> 
+            <li><a href="#">Portfolio</a></li> 
+            <li><a href="#">Contact</a></li> 
+            <li><a href="#">Resume</a></li> 
+            
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Carole</span><br> Ngondi from Cameroon</h1>
+        </div>
+
+
+
+    </div>
+    <!-----------------about-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_0983.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am a software engineer based in Atlanta, GA with entry level experience, specializing in building and designing exceptional websites, application, and everything in between. </p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills"> 
+                        <ul>
+                            <li><span>Software Developer</span><br>Designing Web</li>
+                            <li><span>Web Development</span><br>Web Development</li>
+                            <li><span>Software Developer</span><br>Web Development</li>
+                            
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-contents" id="experience"> 
+                    <ul>
+                        <li><span>2023 - Current</span><br>Software Developer at We Can Code It</li>
+                        <li><span>2023</span><br>Technical Support Analyst at LexisNexis </li>
+                        
+                        
+                    </ul>
+                </div>
+    </div>
+    <div class="tab-contents" id="education"> 
+        <ul>
+                    <li><span>2023</span><br>We Can Code It</li>
+                    <li><span>2018</span><br>Bachelor of Art & Science, Psychology at Georgia State University</li>
+            
+            
+        </ul>
+    </div>      
+        <!---------services------------>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>  
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic placeat nobis deleniti suscipit praesentium cumque alias ab ullam nesciunt esse. Culpa tenetur adipisci magnam itaque a nisi laudantium porro quas?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic placeat nobis deleniti suscipit praesentium cumque alias ab ullam nesciunt esse. Culpa tenetur adipisci magnam itaque a nisi laudantium porro quas?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic placeat nobis deleniti suscipit praesentium cumque alias ab ullam nesciunt esse. Culpa tenetur adipisci magnam itaque a nisi laudantium porro quas?</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+       
+
+       </div>
+   <!------------contact------------->
+   <div id="contact">
+    <div class="row">
+        <div class="contact-left">
+           <h1 class="sub-title">Contact Me</h1> 
+           <p><i class="fa-sharp fa-solid fa-paper-plane"></i>carolengondi@gmail.com</p>
+           <p><i class="fa-solid fa-phone"></i>4049008098</p>
+           <div class="social-icons"></div>
+           <a href=""><i class="fa-brands fa-linkedin"></i></a>
+           <a href=""><i class="fa-brands fa-twitter"></i></a>
+           <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="" class="btn btn2">Download CV</a>
+    </div>
+    
+
+    </div>
+   </div>
+   <div></div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+
+        
+            
+            
+    </script>
+</body>
+</html>
